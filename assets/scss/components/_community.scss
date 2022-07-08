@@ -1,0 +1,17 @@
+/* ========= COMMUNITY ========= */
+.community {
+  background: url("/assets/img/bg-footer-top-mobile.svg") bottom
+  no-repeat;
+  background-size: 100%;
+
+  &_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &_title {
+    margin-bottom: 2rem;
+  }
+}

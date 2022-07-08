@@ -1,32 +1,40 @@
 /* ========= BUTTONS ========= */
 .button {
-    display: inline-block;
-    background-color: var(--pink);
-    color: var(--white);
-    font-family: var(--body-font-a);
-    padding: .75rem 1.5rem;
-    border-radius: 3rem;
-    font-weight: var(--font-semi-bold);
-    transition: .3s;
+  display: inline-block;
+  background-color: var(--pink);
+  color: var(--white);
+  font-family: var(--body-font-a);
+  padding: .85rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
 
-    &:hover {
-        cursor: pointer;
-        background-color: var(--light-pink);
-        box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+  &:hover {
+    cursor: pointer;
+    background-color: var(--light-pink);
+  }
+
+  &_nav {
+    font-family: var(--body-font-b);
+    font-weight: var(--font-normal);
+    padding: .50rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid var(--light-pink);
+    color: var(--light-pink);
+    box-shadow: none;
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+      background-color: transparent;
     }
+  }
 
-    &_nav {
-        font-family: var(--body-font-b);
-        font-weight: var(--font-normal);
-        padding: .50rem 1.5rem;
-        background-color: transparent;
-        border: 1px solid var(--light-pink);
-        color: var(--light-pink);
-
-        &:hover{
-            cursor: pointer;
-            box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-            background-color: transparent;
-        }
-    }
+  &_footer {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
 }

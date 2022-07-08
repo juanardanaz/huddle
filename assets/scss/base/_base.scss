@@ -17,8 +17,12 @@ body {
 
 h1, h2, h3 {
   font-family: var(--body-font-a);
-  font-size: var(--font-bold);
+  font-weight: var(--font-bold);
   color: var(--black);
+}
+
+p {
+  font-family: var(--body-font-b);
 }
 
 a {
