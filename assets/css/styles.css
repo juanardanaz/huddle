@@ -105,6 +105,7 @@ img {
   max-width: 968px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
+  margin-top: var(--mb-1);
 }
 
 .grid {
@@ -115,6 +116,7 @@ img {
 /* ========= HEADER ========= */
 .header {
   width: 100%;
+  height: 70px;
   background-color: var(--white);
   position: fixed;
   top: 0;
@@ -319,7 +321,7 @@ img {
   gap: 1rem;
 }
 .footer_contact_icon {
-  width: 20px;
+  width: 23px;
   height: auto;
 }
 .footer_logo, .footer_social_link {
