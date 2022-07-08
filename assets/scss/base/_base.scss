@@ -1,0 +1,31 @@
+/* ========= BASE ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: var(--font-normal);
+}
+
+h1, h2, h3 {
+  font-family: var(--body-font-a);
+  font-size: var(--font-bold);
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

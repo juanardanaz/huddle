@@ -1,0 +1,76 @@
+/* ========= FONT ========= */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('/assets/fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/OpenSans.woff2') format('woff2'),
+      url('/assets/fonts/OpenSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('/assets/fonts/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/OpenSans-Semibold.woff2') format('woff2'),
+      url('/assets/fonts/OpenSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ========= COLORS ========= */
+  /* ========= Primary ========= */
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+
+  /* ========= Neutral ========= */
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --grey: hsl(207, 5%, 43%);
+
+  /* ========= FONT and TYPOGRAPHY ========= */
+  --body-font-a: 'Poppins';
+  --body-font-b: 'Open Sans';
+
+  /* ========= Font Weight ========= */
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Font size ==========*/
+  --font-normal: 14px;
+
+  /* ========= Margenes ========= */
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+
+  /* ========= Z-Index ========= */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+

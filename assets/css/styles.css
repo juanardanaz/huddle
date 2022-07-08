@@ -1,0 +1,196 @@
+/* ========= FONT ========= */
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("/assets/fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans.woff2") format("woff2"), url("/assets/fonts/OpenSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("/assets/fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/assets/fonts/OpenSans-Semibold.woff2") format("woff2"), url("/assets/fonts/OpenSans-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  /* ========= COLORS ========= */
+  /* ========= Primary ========= */
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  /* ========= Neutral ========= */
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --grey: hsl(207, 5%, 43%);
+  /* ========= FONT and TYPOGRAPHY ========= */
+  --body-font-a: "Poppins";
+  --body-font-b: "Open Sans";
+  /* ========= Font Weight ========= */
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  /*========== Font size ==========*/
+  --font-normal: 14px;
+  /* ========= Margenes ========= */
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  /* ========= Z-Index ========= */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* ========= BASE ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-size: var(--font-normal);
+}
+
+h1, h2, h3 {
+  font-family: var(--body-font-a);
+  font-size: var(--font-bold);
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========= LAYOUT ========= */
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+/* ========= LAYOUT ========= */
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ========= HEADER ========= */
+.header {
+  width: 100%;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+/* ========= NAV ========= */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav_logo {
+  width: 9rem;
+  height: auto;
+}
+
+/*  Change Background Header  */
+.scroll_header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ========= HOME ========= */
+.home_data {
+  text-align: center;
+}
+.home_title {
+  font-size: 1.5rem;
+}
+.home_description {
+  font-family: var(--body-font-b);
+  font-weight: var(--font-semi-bold);
+}
+.home_subtitle {
+  font-family: var(--body-font-a);
+  font-size: 4rem;
+  color: var(--very-dark-cyan);
+}
+.home_info {
+  color: var(--grey);
+  font-family: var(--body-font-b);
+  font-weight: var(--font-semi-bold);
+}
+.home_numbers_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.home_illus {
+  width: 20%;
+}
+
+/* ========= BUTTONS ========= */
+.button {
+  display: inline-block;
+  background-color: var(--pink);
+  color: var(--white);
+  font-family: var(--body-font-a);
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  transition: 0.3s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: var(--light-pink);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.button_nav {
+  font-family: var(--body-font-b);
+  font-weight: var(--font-normal);
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--light-pink);
+  color: var(--light-pink);
+}
+.button_nav:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}

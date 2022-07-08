@@ -1,0 +1,26 @@
+/* ========= HEADER ========= */
+.header {
+    width: 100%;
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+/* ========= NAV ========= */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_logo {
+        width: 9rem;
+        height: auto;
+    }
+}
+
+/*  Change Background Header  */
+.scroll_header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+}
