@@ -1,8 +1,12 @@
 /* ========= COMMUNITY ========= */
 .community {
-  background: url("/assets/img/bg-footer-top-mobile.svg") bottom
-  no-repeat;
+  background: url("/assets/img/bg-section-bottom-mobile-2.svg") top no-repeat, url("/assets/img/bg-footer-top-mobile.svg") bottom no-repeat;
   background-size: 100%;
+
+  &_container {
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+  }
 
   &_data {
     display: flex;

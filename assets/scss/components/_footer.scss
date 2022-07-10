@@ -43,7 +43,10 @@
     height: auto;
   }
 
-  &_logo,
+  &_logo {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(201deg) brightness(160%) contrast(101%);
+  }
+
   &_social_link {
     filter: invert(99%) sepia(0%) saturate(772%) hue-rotate(288deg) brightness(118%) contrast(100%);
   }

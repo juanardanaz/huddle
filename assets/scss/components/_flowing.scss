@@ -1,8 +1,12 @@
 /* ========= FLOWING ========= */
 .flowing {
-  background: var(--white) url("/assets/img/bg-section-bottom-mobile-1.svg") top
-  no-repeat;
+  background: url("/assets/img/bg-section-bottom-mobile-1.svg") top no-repeat, url("/assets/img/bg-section-top-mobile-2.svg") bottom no-repeat;
   background-size: 100%;
+
+  &_container {
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+  }
 
   &_title {
     font-size: 1.2rem;
