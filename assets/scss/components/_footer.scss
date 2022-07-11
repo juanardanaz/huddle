@@ -17,11 +17,10 @@
     line-height: 1.5rem;
   }
 
-  &_content_input {
+  &_contact_form {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 1rem;
   }
 
   &_contact_input {
@@ -49,6 +48,10 @@
 
   &_social_link {
     filter: invert(99%) sepia(0%) saturate(772%) hue-rotate(288deg) brightness(118%) contrast(100%);
+
+    &:hover {
+      filter: invert(74%) sepia(71%) saturate(6259%) hue-rotate(157deg) brightness(102%) contrast(101%);
+    }
   }
 
   &_logo {
@@ -60,4 +63,35 @@
     gap: 0.5rem;
   }
 
+  /* Email address input */
+  #text {
+    display: block;
+    color: var(--light-red);
+    font-family: var(--body-font-b);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  #form.invalid .footer_content_input::before {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url(/assets/img/invalid.png);
+    background-size: cover;
+  }
+
+  #form.valid .footer_content_input::before {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    background: url(/assets/img/valid.png);
+    background-size: cover;
+  }
 }

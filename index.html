@@ -114,10 +114,14 @@
                 <p class="footer_description">To recieve tips on how to grow your community, sign up to our weekly newsletter. 
                     We'll never send you spam or pass on your email address
                 </p>
-                <div class="footer_content_input">
-                    <input type="text" name="email" placeholder="Enter your email" class="footer_contact_input">
-                    <span class="button button_footer">Suscribe</span>
-                </div>
+
+                <form action="#" class="footer_contact_form" id="form">
+                    <div class="footer_content_input">
+                        <input type="text" name="email" placeholder="Enter your email" class="footer_contact_input" id="email" autocomplete="off" onkeydown="validation()">
+                        <span id="text"></span>
+                    </div>
+                    <input type="submit" value="Suscribe" class="button button_footer">
+                </form>
             </div>
 
             <div class="footer_content">

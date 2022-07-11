@@ -1,0 +1,129 @@
+/* ========= MEDIAQUERIES ========= */
+/* For Small Devices */
+@media screen and (max-width: 360px) {
+
+}
+
+/* For Medium Devices */
+@media screen and (min-width: 576px) {
+  .nav_logo {
+    width: 25%;
+    height: auto;
+  }
+
+  .home {
+    background: var(--white) url("/assets/img/bg-section-top-desktop-1.svg") bottom
+    no-repeat;
+    background-size: 100%;
+  }
+
+  .home_title {
+    max-width: 22rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .home_description {
+    max-width: 26rem;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .home_subtitle {
+    font-size: 3rem;
+  }
+
+  .home_illus_screen,
+  .grow_illus,
+  .flowing_illus,
+  .users_illus {
+    width: 70%;
+    margin: auto;
+  }
+
+  .home_illus_screen {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .home_numbers_data {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .grow_description {
+    max-width: 25rem;
+  }
+
+  .flowing {
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
+    background-size: 100% 80px;
+  }
+
+  .flowing_container,
+  .community_container {
+    margin-bottom: 6rem;
+  }
+
+  .flowing_description {
+    max-width: 22rem;
+  }
+
+  .users_description {
+    max-width: 27rem;
+  }
+
+  .community {
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
+    background-size: 100% 80px;
+  }
+
+  .footer_title {
+    font-size: 1.5rem;
+  }
+
+  .footer_logo {
+    width: 45%;
+  }
+
+  .footer_contact_input {
+    width: 31rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav_logo {
+    width: 20%;
+    height: auto;
+  }
+
+  .home_illus_screen,
+  .grow_illus,
+  .flowing_illus,
+  .users_illus {
+    width: 60%;
+    margin: auto;
+  }
+
+  .home_illus_screen {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .community_container {
+    margin-bottom: 8rem;
+  }
+
+  .footer_logo {
+    width: 35%;
+  }
+
+  .footer_contact_input {
+    width: 43rem;
+  }
+}
+
+
+/* For Large Devices */

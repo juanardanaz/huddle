@@ -78,7 +78,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--body-font-a);
-  font-weight: var(--font-bold);
+  font-weight: 700;
   color: var(--black);
 }
 
@@ -203,7 +203,7 @@ img {
 }
 .button_nav {
   font-family: var(--body-font-b);
-  font-weight: var(--font-regular);
+  font-weight: 400;
   padding: 0.3rem 1.3rem;
   background-color: transparent;
   border: 1px solid var(--light-pink);
@@ -220,6 +220,7 @@ img {
   height: 3rem;
   border-radius: 0.5rem;
   text-align: center;
+  border: none;
 }
 
 /* ========= GROW ========= */
@@ -301,6 +302,7 @@ img {
 .footer {
   background-color: var(--very-dark-cyan);
   color: var(--white);
+  /* Email address input */
 }
 .footer_content {
   display: flex;
@@ -313,11 +315,10 @@ img {
 .footer_description {
   line-height: 1.5rem;
 }
-.footer_content_input {
+.footer_contact_form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 1rem;
 }
 .footer_contact_input {
   width: 19rem;
@@ -341,12 +342,43 @@ img {
 .footer_social_link {
   filter: invert(99%) sepia(0%) saturate(772%) hue-rotate(288deg) brightness(118%) contrast(100%);
 }
+.footer_social_link:hover {
+  filter: invert(74%) sepia(71%) saturate(6259%) hue-rotate(157deg) brightness(102%) contrast(101%);
+}
 .footer_logo {
   width: 60%;
 }
 .footer_social {
   display: flex;
   gap: 0.5rem;
+}
+.footer #text {
+  display: block;
+  color: var(--light-red);
+  font-family: var(--body-font-b);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 5px;
+}
+.footer #form.invalid .footer_content_input::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background: url(/assets/img/invalid.png);
+  background-size: cover;
+}
+.footer #form.valid .footer_content_input::before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background: url(/assets/img/valid.png);
+  background-size: cover;
 }
 
 /* ========= SCROLLBAR ========= */
@@ -362,3 +394,125 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(216deg, 8%, 44%);
 }
+
+/* ========= MEDIAQUERIES ========= */
+/* For Small Devices */
+/* For Medium Devices */
+@media screen and (min-width: 576px) {
+  .nav_logo {
+    width: 25%;
+    height: auto;
+  }
+
+  .home {
+    background: var(--white) url("/assets/img/bg-section-top-desktop-1.svg") bottom no-repeat;
+    background-size: 100%;
+  }
+
+  .home_title {
+    max-width: 22rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .home_description {
+    max-width: 26rem;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .home_subtitle {
+    font-size: 3rem;
+  }
+
+  .home_illus_screen,
+.grow_illus,
+.flowing_illus,
+.users_illus {
+    width: 70%;
+    margin: auto;
+  }
+
+  .home_illus_screen {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .home_numbers_data {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .grow_description {
+    max-width: 25rem;
+  }
+
+  .flowing {
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
+    background-size: 100% 80px;
+  }
+
+  .flowing_container,
+.community_container {
+    margin-bottom: 6rem;
+  }
+
+  .flowing_description {
+    max-width: 22rem;
+  }
+
+  .users_description {
+    max-width: 27rem;
+  }
+
+  .community {
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
+    background-size: 100% 80px;
+  }
+
+  .footer_title {
+    font-size: 1.5rem;
+  }
+
+  .footer_logo {
+    width: 45%;
+  }
+
+  .footer_contact_input {
+    width: 31rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .nav_logo {
+    width: 20%;
+    height: auto;
+  }
+
+  .home_illus_screen,
+.grow_illus,
+.flowing_illus,
+.users_illus {
+    width: 60%;
+    margin: auto;
+  }
+
+  .home_illus_screen {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .community_container {
+    margin-bottom: 8rem;
+  }
+
+  .footer_logo {
+    width: 35%;
+  }
+
+  .footer_contact_input {
+    width: 43rem;
+  }
+}
+/* For Large Devices */
