@@ -367,7 +367,7 @@ img {
   top: 12px;
   width: 24px;
   height: 24px;
-  background: url(./assets/img/invalid.png);
+  background: url("./assets/img/invalid.png");
   background-size: cover;
 }
 .footer #form.valid .footer_content_input::before {
@@ -377,7 +377,7 @@ img {
   top: 12px;
   width: 24px;
   height: 24px;
-  background: url(./assets/img/valid.png);
+  background: url("./assets/img/valid.png");
   background-size: cover;
 }
 
@@ -404,7 +404,7 @@ img {
     height: auto;
   }
   .home {
-    background: var(--white) url("/assets/img/bg-section-top-desktop-1.svg") bottom no-repeat;
+    background: var(--white) url("./assets/img/bg-section-top-desktop-1.svg") bottom no-repeat;
     background-size: 100%;
   }
   .home_title {
