@@ -12,26 +12,37 @@
   }
 
   .home {
-    background: var(--white) url("./assets/img/bg-section-top-desktop-1.svg") bottom
+    background: var(--white) url("/assets/img/bg-section-top-desktop-1.svg") bottom
     no-repeat;
     background-size: 100%;
-  }
 
-  .home_title {
-    max-width: 22rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
+    &_title {
+      max-width: 22rem;
+      margin: auto;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
 
-  .home_description {
-    max-width: 26rem;
-    margin: auto;
-    margin-bottom: 2rem;
-  }
+    &_description {
+      max-width: 26rem;
+      margin: auto;
+      margin-bottom: 2rem;
+    }
 
-  .home_subtitle {
-    font-size: 3rem;
+    &_subtitle {
+      font-size: 3rem;
+    }
+
+    &_illus_screen {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    &_numbers_data {
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
   }
 
   .home_illus_screen,
@@ -42,24 +53,17 @@
     margin: auto;
   }
 
-  .home_illus_screen {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  .home_numbers_data {
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-
   .grow_description {
     max-width: 25rem;
   }
 
   .flowing {
-    background: url("./assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("./assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
     background-size: 100% 80px;
+
+    &_description {
+      max-width: 22rem;
+    }
   }
 
   .flowing_container,
@@ -67,29 +71,27 @@
     margin-bottom: 6rem;
   }
 
-  .flowing_description {
-    max-width: 22rem;
-  }
-
   .users_description {
     max-width: 27rem;
   }
 
   .community {
-    background: url("./assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("./assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
     background-size: 100% 80px;
   }
 
-  .footer_title {
-    font-size: 1.5rem;
-  }
+  .footer {
+    &_title {
+      font-size: 1.5rem;
+    }
 
-  .footer_logo {
-    width: 45%;
-  }
+    &_logo {
+      width: 45%;
+    }
 
-  .footer_contact_input {
-    width: 31rem;
+    &_contact_input {
+      width: 31rem;
+    }
   }
 }
 
@@ -103,7 +105,7 @@
   .grow_illus,
   .flowing_illus,
   .users_illus {
-    width: 60%;
+    width: 50%;
     margin: auto;
   }
 
@@ -116,14 +118,103 @@
     margin-bottom: 8rem;
   }
 
-  .footer_logo {
-    width: 35%;
-  }
+  .footer {
+    &_logo {
+      width: 30%;
+    }
 
-  .footer_contact_input {
-    width: 43rem;
+    &_contact_input {
+      width: 43rem;
+    }
   }
 }
 
-
 /* For Large Devices */
+@media screen and (min-width: 968px) {
+  .nav_logo {
+    width: 15%;
+    height: auto;
+  }
+
+  .home {
+    &_illus_screen {
+      width: 60%;
+      margin: auto;
+    }
+
+    &_subtitle {
+      font-size: 4rem;
+    }
+  }
+
+  .grow_data, .flowing_data, .users_data {
+    align-items: flex-start;
+  }
+
+  .grow_illus, .flowing_illus, .users_illus {
+    width: 40%;
+    margin: auto;
+  }
+
+  .grow_container, .users_container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .grow_description, .flowing_description, .users_description {
+    text-align: left;
+  }
+
+  .flowing_container {
+    display: flex;
+    align-items: center;
+  }
+
+  .community_title {
+    font-size: 2rem;
+  }
+
+  .footer {
+    &_container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    &_content {
+      align-items: flex-start;
+    }
+
+    &_newsletter {
+      order: 2;
+    }
+
+    &_media {
+      order: 1;
+    }
+
+    &_contact_form {
+      flex-direction: row;
+      align-items: stretch;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    &_contact_input {
+      width: 15rem;
+    }
+
+    &_logo {
+      width: 50%;
+    }
+
+    &_description {
+      max-width: 19rem;
+      font-size: 13px;
+    }
+
+    &_social {
+      margin-top: 2rem;
+    }
+  }
+}
