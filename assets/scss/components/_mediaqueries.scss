@@ -12,7 +12,7 @@
   }
 
   .home {
-    background: var(--white) url("../assets/img/bg-section-top-desktop-1.svg") bottom
+    background: var(--white) url("/assets/img/bg-section-top-desktop-1.svg") bottom
     no-repeat;
     background-size: 100%;
 
@@ -58,7 +58,7 @@
   }
 
   .flowing {
-    background: url("../assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("../assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
     background-size: 100% 80px;
 
     &_description {
@@ -76,8 +76,12 @@
   }
 
   .community {
-    background: url("../assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("../assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
+    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
     background-size: 100% 80px;
+
+    &_title {
+      max-width: 13rem;
+    }
   }
 
   .footer {
@@ -91,6 +95,10 @@
 
     &_contact_input {
       width: 31rem;
+    }
+
+    &_content {
+      gap: 2.5rem;
     }
   }
 }
@@ -114,8 +122,14 @@
     margin-bottom: 3rem;
   }
 
-  .community_container {
-    margin-bottom: 8rem;
+  .community {
+    &_container {
+      margin-bottom: 8rem;
+    }
+
+    &_title {
+      max-width: 20rem;
+    }
   }
 
   .footer {
@@ -154,6 +168,10 @@
   .grow_illus, .flowing_illus, .users_illus {
     width: 40%;
     margin: auto;
+  }
+
+  .grow_title, .flowing_title, .users_title {
+    font-size: 1.75rem;
   }
 
   .grow_container, .users_container {
@@ -215,6 +233,56 @@
 
     &_social {
       margin-top: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    padding: 1rem 3.5rem;
+
+    &_nav {
+      padding: 0.3rem 1.3rem;
+    }
+
+    &_footer {
+      padding: 1rem 2.5rem;
+    }
+  }
+
+  .home {
+    &_container {
+      margin-top: 6rem;
+    }
+
+    &_title {
+      max-width: 42rem;
+    }
+
+    &_numbers_data {
+      margin-bottom: 6rem;
+      gap: 12rem;
+    }
+  }
+
+  .grow_description, .flowing_description, .users_description {
+    max-width: 27rem;
+  }
+
+  .community {
+    &_title {
+      max-width: 33rem;
+    }
+  }
+
+  .footer {
+    &_contact_form {
+      gap: 2rem;
     }
   }
 }
