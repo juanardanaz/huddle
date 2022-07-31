@@ -12,7 +12,7 @@
   }
 
   .home {
-    background: var(--white) url("/assets/img/bg-section-top-desktop-1.svg") bottom
+    background: var(--white) url("./assets/img/bg-section-top-desktop-1.svg") bottom
     no-repeat;
     background-size: 100%;
 
@@ -58,7 +58,7 @@
   }
 
   .flowing {
-    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
+    background: url("./assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("./assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
     background-size: 100% 80px;
 
     &_description {
@@ -76,7 +76,7 @@
   }
 
   .community {
-    background: url("/assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("/assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
+    background: url("./assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("./assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
     background-size: 100% 80px;
 
     &_title {
