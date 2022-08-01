@@ -1,28 +1,28 @@
 /* ========= FONT ========= */
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("./assets/fonts/Poppins-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("./assets/fonts/OpenSans.woff2") format("woff2"), url("./assets/fonts/OpenSans.woff") format("woff");
+  src: url("../fonts/OpenSans.woff2") format("woff2"), url("../fonts/OpenSans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("./assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("./assets/fonts/OpenSans-Bold.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("./assets/fonts/OpenSans-Semibold.woff2") format("woff2"), url("./assets/fonts/OpenSans-Semibold.woff") format("woff");
+  src: url("../fonts/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/OpenSans-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -142,7 +142,7 @@ img {
 
 /* ========= HOME ========= */
 .home {
-  background: var(--white) url("./assets/img/bg-section-top-mobile-1.svg") bottom no-repeat;
+  background: var(--white) url("../img/bg-section-top-mobile-1.svg") bottom no-repeat;
   background-size: 100%;
 }
 .home_container {
@@ -241,7 +241,7 @@ img {
 
 /* ========= FLOWING ========= */
 .flowing {
-  background: url("./assets/img/bg-section-bottom-mobile-1.svg") top no-repeat, url("./assets/img/bg-section-top-mobile-2.svg") bottom no-repeat;
+  background: url("../img/bg-section-bottom-mobile-1.svg") top no-repeat, url("../img/bg-section-top-mobile-2.svg") bottom no-repeat;
   background-size: 100%;
 }
 .flowing_container {
@@ -280,7 +280,7 @@ img {
 
 /* ========= COMMUNITY ========= */
 .community {
-  background: url("./assets/img/bg-section-bottom-mobile-2.svg") top no-repeat, url("./assets/img/bg-footer-top-mobile.svg") bottom no-repeat;
+  background: url("../img/bg-section-bottom-mobile-2.svg") top no-repeat, url("../img/bg-footer-top-mobile.svg") bottom no-repeat;
   background-size: 100%;
 }
 .community_container {
@@ -372,7 +372,7 @@ img {
   top: 12px;
   width: 24px;
   height: 24px;
-  background: url(/assets/img/invalid.png);
+  background: url("../img/invalid.png");
   background-size: cover;
 }
 .footer #form.valid .footer_content_input::before {
@@ -382,7 +382,7 @@ img {
   top: 12px;
   width: 24px;
   height: 24px;
-  background: url(/assets/img/valid.png);
+  background: url("../img/valid.png");
   background-size: cover;
 }
 
@@ -409,7 +409,7 @@ img {
     height: auto;
   }
   .home {
-    background: var(--white) url("./assets/img/bg-section-top-desktop-1.svg") bottom no-repeat;
+    background: var(--white) url("../img/bg-section-top-desktop-1.svg") bottom no-repeat;
     background-size: 100%;
   }
   .home_title {
@@ -446,7 +446,7 @@ img {
     max-width: 25rem;
   }
   .flowing {
-    background: url("./assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("./assets/img/bg-section-top-desktop-2.svg") bottom no-repeat;
+    background: url("../img/bg-section-bottom-desktop-1.svg") top no-repeat, url("../img/bg-section-top-desktop-2.svg") bottom no-repeat;
     background-size: 100% 80px;
   }
   .flowing_description {
@@ -460,7 +460,7 @@ img {
     max-width: 27rem;
   }
   .community {
-    background: url("./assets/img/bg-section-bottom-desktop-1.svg") top no-repeat, url("./assets/img/bg-footer-top-desktop.svg") bottom no-repeat;
+    background: url("../img/bg-section-bottom-desktop-1.svg") top no-repeat, url("../img/bg-footer-top-desktop.svg") bottom no-repeat;
     background-size: 100% 80px;
   }
   .community_title {
@@ -597,7 +597,7 @@ img {
     margin-top: 6rem;
   }
   .home_title {
-    max-width: 42rem;
+    max-width: 43rem;
   }
   .home_numbers_data {
     margin-bottom: 6rem;
@@ -607,7 +607,7 @@ img {
     max-width: 27rem;
   }
   .community_title {
-    max-width: 33rem;
+    max-width: 35rem;
   }
   .footer_contact_form {
     gap: 2rem;
