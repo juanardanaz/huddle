@@ -110,7 +110,7 @@ img {
 
 .grid {
   display: grid;
-  gap: 3.5rem;
+  gap: 4rem;
 }
 
 /* ========= HEADER ========= */
@@ -157,7 +157,6 @@ img {
 }
 .home_description {
   font-family: var(--body-font-b);
-  font-weight: var(--font-semi-bold);
   margin-bottom: 2rem;
 }
 .home_subtitle {
@@ -176,6 +175,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
+  padding-bottom: 3rem;
 }
 .home_illus_screen {
   margin-top: 4rem;
@@ -237,6 +237,7 @@ img {
 }
 .grow_description {
   text-align: center;
+  font-size: 13px;
 }
 
 /* ========= FLOWING ========= */
@@ -259,6 +260,7 @@ img {
 }
 .flowing_description {
   text-align: center;
+  font-size: 13px;
 }
 
 /* ========= USERS ========= */
@@ -276,6 +278,7 @@ img {
 }
 .users_description {
   text-align: center;
+  font-size: 13px;
 }
 
 /* ========= COMMUNITY ========= */
@@ -311,6 +314,7 @@ img {
 .footer_title {
   color: var(--white);
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .footer_description {
   line-height: 1.5rem;
@@ -351,11 +355,17 @@ img {
 .footer_social {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 .footer_intro_general, .footer_contact_general {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.footer_twitter_icon {
+  width: 32%;
+  height: auto;
+  padding-left: 3px;
 }
 .footer #text {
   display: block;
@@ -443,21 +453,21 @@ img {
     margin: auto;
   }
   .grow_description {
-    max-width: 25rem;
+    max-width: 20rem;
   }
   .flowing {
     background: url("../img/bg-section-bottom-desktop-1.svg") top no-repeat, url("../img/bg-section-top-desktop-2.svg") bottom no-repeat;
     background-size: 100% 80px;
   }
   .flowing_description {
-    max-width: 22rem;
+    max-width: 19rem;
   }
   .flowing_container,
 .community_container {
     margin-bottom: 6rem;
   }
   .users_description {
-    max-width: 27rem;
+    max-width: 19rem;
   }
   .community {
     background: url("../img/bg-section-bottom-desktop-1.svg") top no-repeat, url("../img/bg-footer-top-desktop.svg") bottom no-repeat;
@@ -555,6 +565,8 @@ img {
   }
   .footer_newsletter {
     order: 2;
+    display: flex;
+    gap: 1rem;
   }
   .footer_media {
     order: 1;
@@ -566,7 +578,7 @@ img {
     margin-top: 1rem;
   }
   .footer_contact_input {
-    width: 15rem;
+    width: 18rem;
   }
   .footer_logo {
     width: 50%;
@@ -599,12 +611,23 @@ img {
   .home_title {
     max-width: 43rem;
   }
+  .home_description {
+    max-width: 27rem;
+  }
   .home_numbers_data {
-    margin-bottom: 6rem;
+    margin-bottom: 10rem;
     gap: 12rem;
   }
+  .grow_title, .flowing_title, .users_title {
+    font-size: 2.2rem;
+  }
   .grow_description, .flowing_description, .users_description {
-    max-width: 27rem;
+    max-width: 28rem;
+    font-size: 14px;
+  }
+  .community {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
   .community_title {
     max-width: 35rem;

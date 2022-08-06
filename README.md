@@ -49,6 +49,7 @@ Users should be able to:
 - [CSS filter generator](https://codepen.io/sosuke/pen/Pjoqqp) - This helped me to change the color of a SVG element
 - [ScrollReveal](https://scrollrevealjs.org/) - ScrollReveal is a JavaScript library for easily animating elements as they enter/leave the viewport.
 - [Responsive Design Checker](https://responsivedesignchecker.com/) - You can discover how your website looks on a variety of different screens, including desktops, laptops, tablets, and smartphones.
+- [SVG Repo](https://www.svgrepo.com/) - Explore, search and find the best fitting icons or vectors for your projects using wide variety vector library. Download free SVG Vectors.
 
 ## Author
 

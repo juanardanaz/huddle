@@ -54,7 +54,7 @@
   }
 
   .grow_description {
-    max-width: 25rem;
+    max-width: 20rem;
   }
 
   .flowing {
@@ -62,7 +62,7 @@
     background-size: 100% 80px;
 
     &_description {
-      max-width: 22rem;
+      max-width: 19rem;
     }
   }
 
@@ -72,7 +72,7 @@
   }
 
   .users_description {
-    max-width: 27rem;
+    max-width: 19rem;
   }
 
   .community {
@@ -205,6 +205,8 @@
 
     &_newsletter {
       order: 2;
+      display: flex;
+      gap: 1rem;
     }
 
     &_media {
@@ -219,7 +221,7 @@
     }
 
     &_contact_input {
-      width: 15rem;
+      width: 18rem;
     }
 
     &_logo {
@@ -264,17 +266,29 @@
       max-width: 43rem;
     }
 
+    &_description {
+      max-width: 27rem;
+    }
+
     &_numbers_data {
-      margin-bottom: 6rem;
+      margin-bottom: 10rem;
       gap: 12rem;
     }
   }
 
+  .grow_title, .flowing_title, .users_title {
+    font-size: 2.2rem;
+  }
+
   .grow_description, .flowing_description, .users_description {
-    max-width: 27rem;
+    max-width: 28rem;
+    font-size: 14px;
   }
 
   .community {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
     &_title {
       max-width: 35rem;
     }
