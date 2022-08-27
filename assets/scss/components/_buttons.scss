@@ -1,7 +1,7 @@
 /* ========= BUTTONS ========= */
 .button {
   display: inline-block;
-  background-color: var(--pink);
+  background-color: var(--dark-pink);
   color: var(--white);
   font-family: var(--body-font-a);
   padding: 1rem 2.5rem;
@@ -20,8 +20,8 @@
     font-weight: 400;
     padding: .3rem 1.3rem;
     background-color: transparent;
-    border: 1px solid var(--light-pink);
-    color: var(--light-pink);
+    border: 1px solid var(--dark-pink);
+    color: var(--dark-pink);
     box-shadow: none;
 
     &:hover{

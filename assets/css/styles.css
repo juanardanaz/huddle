@@ -33,6 +33,8 @@
   --pink: hsl(322, 100%, 66%);
   --light-pink: hsl(321, 100%, 78%);
   --light-red: hsl(0, 100%, 63%);
+  --dark-pink: hsl(322, 97%, 55%);
+  --darker-pink: hsl(321, 90%, 35%);
   /* ========= Neutral ========= */
   --very-dark-cyan: hsl(192, 100%, 9%);
   --very-pale-blue: hsl(207, 100%, 98%);
@@ -188,7 +190,7 @@ img {
 /* ========= BUTTONS ========= */
 .button {
   display: inline-block;
-  background-color: var(--pink);
+  background-color: var(--dark-pink);
   color: var(--white);
   font-family: var(--body-font-a);
   padding: 1rem 2.5rem;
@@ -206,8 +208,8 @@ img {
   font-weight: 400;
   padding: 0.3rem 1.3rem;
   background-color: transparent;
-  border: 1px solid var(--light-pink);
-  color: var(--light-pink);
+  border: 1px solid var(--dark-pink);
+  color: var(--dark-pink);
   box-shadow: none;
 }
 .button_nav:hover {
@@ -382,7 +384,7 @@ img {
   top: 12px;
   width: 24px;
   height: 24px;
-  background: url("../img/invalid.png");
+  background: url(../img/invalid.png);
   background-size: cover;
 }
 .footer #form.valid .footer_content_input::before {
@@ -392,7 +394,7 @@ img {
   top: 12px;
   width: 24px;
   height: 24px;
-  background: url("../img/valid.png");
+  background: url(../img/valid.png);
   background-size: cover;
 }
 
